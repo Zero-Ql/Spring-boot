@@ -34,7 +34,7 @@ public class LoginFilter implements Filter {
      * @throws ServletException 如果初始化过程中出现Servlet相关异常，则抛出。
      */
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
+    public void init(FilterConfig filterConfig) {
         log.info("初始化login过滤器");
     }
 

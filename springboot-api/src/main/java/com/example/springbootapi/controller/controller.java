@@ -21,8 +21,8 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -64,17 +64,14 @@ class GetTheNumberOfOnlineUsers {
     public JsonResult<String> getTheNumberOfOnlineUsers(HttpServletRequest request, HttpServletResponse response) {
         //  创建一个Cookie用于存储JSESSIONID
         Cookie cookie;
-        try {
-            cookie = new Cookie("JSESSIONID", URLEncoder.encode(request.getSession().getId(), "UTF-8"));
-            cookie.setPath("/");
-            cookie.setMaxAge(60 * 60 * 24);
-            // 将Cookie添加到响应中，以便客户端可以接收
-            response.addCookie(cookie);
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
+        cookie = new Cookie("JSESSIONID", URLEncoder.encode(request.getSession().getId(), StandardCharsets.UTF_8));
+        cookie.setPath("/");
+        cookie.setMaxAge(60 * 60 * 24);
+        // 将Cookie添加到响应中，以便客户端可以接收
+        response.addCookie(cookie);
         // 从会话中获取当前在线用户数量
-        Integer count = request.getSession().getServletContext().getAttribute("count") != null ? (Integer) request.getSession().getServletContext().getAttribute("count") : -1;
+        var count = request.getSession().getServletContext().getAttribute("count") != null ?
+                (Integer) request.getSession().getServletContext().getAttribute("count") : -1;
 
         // 返回包含当前在线用户数量的JSON结果
         return new JsonResult<>("当前在线人数：" + count);
@@ -93,8 +90,8 @@ public class controller {
 @RequestMapping(path = "/upload")
 class uploadController {
     // 用于格式化日期的两个SimpleDateFormat实例
-    private SimpleDateFormat YYYY_MM_DD = new SimpleDateFormat("yyyy-MM-dd");
-    private SimpleDateFormat HH_mm_ss = new SimpleDateFormat("HH-mm-ss");
+    private final SimpleDateFormat YYYY_MM_DD = new SimpleDateFormat("yyyy-MM-dd");
+    private final SimpleDateFormat HH_mm_ss = new SimpleDateFormat("HH-mm-ss");
 
     /**
      * 上传文本文件的方法
@@ -114,7 +111,7 @@ class uploadController {
         // 获取上传文件的原始名称
         String uploadFileName = uploadFile.getOriginalFilename();
         // 拼接新文件名，包含UUID和时间戳以避免重复
-        String newFileName;
+        String newFileName = "";
 
         String fileUrl;
         // 如果目标文件夹不存在，则创建该文件夹
@@ -122,7 +119,9 @@ class uploadController {
             folderPath.mkdirs();
         }
         // 生成并设置新文件名
-        newFileName = UUID.randomUUID() + HH_mm_ss.format(System.currentTimeMillis()) + uploadFileName.substring(uploadFileName.lastIndexOf("."), uploadFileName.length());
+        if (uploadFileName != null) {
+            newFileName = UUID.randomUUID() + HH_mm_ss.format(System.currentTimeMillis()) + uploadFileName.substring(uploadFileName.lastIndexOf("."), uploadFileName.length());
+        }
         try {
             // 将上传文件移动到目标文件夹
             uploadFile.transferTo(new File(folderPath, newFileName));
@@ -146,10 +145,9 @@ class LoginController {
      * @param request  HttpServletRequest对象，用于接收客户端请求数据
      * @param response HttpServletResponse对象，用于向客户端发送响应
      * @return 返回登录成功后重定向到的URL或登录失败后重新回到登录页面的URL
-     * @throws IOException 如果发生I/O错误
      */
     @RequestMapping(path = "/login", method = {RequestMethod.POST, RequestMethod.GET})
-    public String loginController(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public String loginController(HttpServletRequest request, HttpServletResponse response) {
         HashMap<String, String> hashMap = new HashMap<>(); // 用于存储用户输入的登录信息
         var session = request.getSession(); // 获取当前会话对象
         Cookie cookieUserName;
