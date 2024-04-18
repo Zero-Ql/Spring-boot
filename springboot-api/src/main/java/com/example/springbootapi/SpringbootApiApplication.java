@@ -12,10 +12,10 @@ import java.lang.management.ManagementFactory;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
+@Log4j2
 @SpringBootApplication(
         scanBasePackages = {"com.example.*"},
         exclude = {DataSourceAutoConfiguration.class})
-@Log4j2
 public class SpringbootApiApplication {
     public static void main(String[] args) throws UnknownHostException {
 //        SpringApplication.run(SpringbootApiApplication.class, args);

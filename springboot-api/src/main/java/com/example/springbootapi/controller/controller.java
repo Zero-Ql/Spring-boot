@@ -138,6 +138,7 @@ class uploadController {
 }
 
 @Controller
+@RequestMapping("/user")
 class LoginController {
     /**
      * 登录处理控制器
@@ -173,7 +174,7 @@ class LoginController {
             return "redirect:/index";
         } else {
             // 登录失败，重定向回登录页面
-            return "redirect:/login.html";
+            return "redirect:/user/login.html";
         }
     }
 }
@@ -217,7 +218,7 @@ class Index {
                     """);
         } else {
             // 用户未登录，重定向到登录页面
-            response.sendRedirect(request.getContextPath() + "/login.html");
+            response.sendRedirect(request.getContextPath() + "/user/login.html");
         }
     }
 }
