@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<form action="http://localhost:8080/login" method="post">
+    <label>
+        账号：<input type="text" name="username" id="username"/><br/>
+        密码：<input type="password" name="password" id="password"/><br/>
+        <input type="submit" value="submit"/>
+    </label>
+</form>
+
+<script>
+    function getCookie(name) {
+        let arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg)) {
+            return (arr[2]);
+        } else {
+            return null;
+        }
+    }
+
+    const usernameCookie = getCookie("username");
+    const passwordCookie = getCookie("password");
+    if (usernameCookie != null && passwordCookie != null) {
+        document.getElementById("username").setAttribute("value", usernameCookie);
+        document.getElementById("password").setAttribute("value", passwordCookie);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3c4572a-543e-4afc-b6b8-09d31ecd62ba" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="$PROJECT_DIR$/../../Maven1/apache-maven-3.9.3" />
+        <option name="localRepository" value="D:\Code\maven\repositoty" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\Code\Maven1\apache-maven-3.9.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2eUY3qSO7dUEHclGQ1uUapytHBz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SpringbootApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/JavaCode/Spring-boot&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\JavaCode\Spring-boot\springboot-common\src\main\java\com\example\springbootcommon" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootApiApplication">
+    <configuration name="SpringbootApiApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/SpringbootApiApplication.http" requestIdentifier="#1">
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringbootApiApplication | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/SpringbootApiApplication.http" index="2" requestIdentifier="#2">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1">
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringbootApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootapi.SpringbootApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="a3c4572a-543e-4afc-b6b8-09d31ecd62ba" name="更改" comment="" />
+      <created>1711960428225</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711960428225</updated>
+      <workItem from="1711960429382" duration="3622000" />
+      <workItem from="1711975123726" duration="6344000" />
+      <workItem from="1712057165386" duration="6298000" />
+      <workItem from="1712063704878" duration="1330000" />
+      <workItem from="1712065062219" duration="56000" />
+      <workItem from="1712065127566" duration="195000" />
+      <workItem from="1712065333913" duration="29000" />
+      <workItem from="1712065372656" duration="265000" />
+      <workItem from="1712065647566" duration="10000" />
+      <workItem from="1712065671543" duration="3757000" />
+      <workItem from="1712108329856" duration="3340000" />
+      <workItem from="1712114387627" duration="1489000" />
+      <workItem from="1712123871671" duration="1333000" />
+      <workItem from="1712125216577" duration="2492000" />
+      <workItem from="1712400772827" duration="1595000" />
+      <workItem from="1712469525505" duration="9979000" />
+      <workItem from="1712479953051" duration="1157000" />
+      <workItem from="1712481135520" duration="1421000" />
+      <workItem from="1712538415618" duration="13824000" />
+      <workItem from="1712580173943" duration="1258000" />
+      <workItem from="1712633464629" duration="59000" />
+      <workItem from="1712635606132" duration="5599000" />
+      <workItem from="1712713318066" duration="3000" />
+      <workItem from="1712814098599" duration="18402000" />
+      <workItem from="1712896288915" duration="2497000" />
+      <workItem from="1712901288349" duration="10506000" />
+      <workItem from="1712912000118" duration="1937000" />
+      <workItem from="1712937288656" duration="804000" />
+      <workItem from="1712938109443" duration="668000" />
+      <workItem from="1712971557128" duration="3367000" />
+      <workItem from="1712977635038" duration="1997000" />
+      <workItem from="1713012496841" duration="320000" />
+      <workItem from="1713012829505" duration="16725000" />
+      <workItem from="1713080620252" duration="1088000" />
+      <workItem from="1713081729183" duration="591000" />
+      <workItem from="1713082456303" duration="3708000" />
+      <workItem from="1713086205362" duration="48000" />
+      <workItem from="1713086256025" duration="2422000" />
+      <workItem from="1713088910524" duration="2794000" />
+      <workItem from="1713101511551" duration="3044000" />
+      <workItem from="1713104593651" duration="5237000" />
+      <workItem from="1713140462291" duration="5689000" />
+      <workItem from="1713146184789" duration="3089000" />
+      <workItem from="1713149301716" duration="3848000" />
+      <workItem from="1713163846653" duration="2908000" />
+      <workItem from="1713166776769" duration="61000" />
+      <workItem from="1713166840994" duration="5011000" />
+      <workItem from="1713235593679" duration="1628000" />
+      <workItem from="1713314577767" duration="182000" />
+      <workItem from="1713314801438" duration="144000" />
+      <workItem from="1713315054916" duration="295000" />
+      <workItem from="1713315357916" duration="43000" />
+      <workItem from="1713315409537" duration="553000" />
+      <workItem from="1713315971015" duration="59000" />
+      <workItem from="1713316038252" duration="577000" />
+      <workItem from="1713316627321" duration="161000" />
+      <workItem from="1713316797541" duration="120000" />
+      <workItem from="1713316936236" duration="3312000" />
+      <workItem from="1713415779841" duration="6026000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
