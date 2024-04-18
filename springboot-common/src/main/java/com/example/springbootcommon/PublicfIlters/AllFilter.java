@@ -24,7 +24,7 @@ public class AllFilter implements Filter {
      */
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        log.info("初始化过滤器");
+        log.info("初始化AllFilter过滤器");
     }
 
     /**
@@ -39,7 +39,7 @@ public class AllFilter implements Filter {
      */
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        log.info("过滤器开始工作");
+        log.info("AllFilter过滤器开始工作");
 
         // 获取客户端IP地址
         String ip = servletRequest.getRemoteHost();
@@ -55,7 +55,7 @@ public class AllFilter implements Filter {
             log.error("{} 非本机IP，禁止访问", ip);
         }
 
-        log.info("过滤器结束工作");
+        log.info("AllFilter过滤器结束工作");
     }
 
     /**
@@ -63,6 +63,6 @@ public class AllFilter implements Filter {
      */
     @Override
     public void destroy() {
-        log.info("销毁过滤器");
+        log.info("销毁AllFilter过滤器");
     }
 }

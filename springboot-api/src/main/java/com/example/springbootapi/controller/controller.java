@@ -11,7 +11,9 @@ import com.example.springbootservice.Login;
 import com.example.springbootservice.Score;
 import fun.zero.li.JsonResult;
 import jakarta.annotation.Resource;
-import jakarta.servlet.http.*;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -28,7 +30,7 @@ import java.util.UUID;
 
 /**
  * @author: QSky
- * @data: 2024-04-01 16:39
+ * @date: 2024-04-01 16:39
  **/
 
 @RestController // 定义一个RESTful控制器
