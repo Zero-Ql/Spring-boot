@@ -15,12 +15,12 @@ import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
@@ -189,35 +189,16 @@ class Index {
      * @throws IOException 如果发生I/O错误
      */
     @RequestMapping(path = "/index", method = RequestMethod.GET)
-    public void index(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public String index(HttpServletRequest request, HttpServletResponse response, Model model) throws IOException {
         var session = request.getSession();
         var username = session.getAttribute("username"); // 尝试从会话中获取用户名
-        PrintWriter out = response.getWriter();
         if (username != null) {
-            // 用户已登录，设置响应为HTML格式，并输出欢迎页面
-            response.setCharacterEncoding("UTF-8");
-            response.setContentType("text/html;charset=utf-8");
-            out.write("""
-                    <!DOCTYPE html>
-                    <html lang="en">
-                    <head>
-                        <meta charset="utf-8">
-                        <title>Title</title>
-                    </head>
-                    <body>
-                    <h1>success</h1>
-                    <div>
-                        <p>
-                            welcome\s""" + username + """
-                        </p>
-                    </div>
-                    </body>
-                    </html>
-                    """);
+            model.addAttribute("username", username);
         } else {
             // 用户未登录，重定向到登录页面
             response.sendRedirect(request.getContextPath() + "/user/login.html");
         }
+        return "index";
     }
 }
 
