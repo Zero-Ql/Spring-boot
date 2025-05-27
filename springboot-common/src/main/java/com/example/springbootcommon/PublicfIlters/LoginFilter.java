@@ -23,7 +23,7 @@ import java.util.regex.Pattern;
 public class LoginFilter implements Filter {
     // 定义需要过滤的URL地址数组
     private final String[] urls = {
-            "/login.html"
+            "/login.html", "/index.html"
     };
 
     /**

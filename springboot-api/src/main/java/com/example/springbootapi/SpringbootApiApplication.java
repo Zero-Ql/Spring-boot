@@ -3,7 +3,6 @@ package com.example.springbootapi;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.Environment;
 import org.springframework.util.StringUtils;
@@ -13,9 +12,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 @Log4j2
-@SpringBootApplication(
-        scanBasePackages = {"com.example.*"},
-        exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication(scanBasePackages = {"com.example.*"})
 public class SpringbootApiApplication {
     public static void main(String[] args) throws UnknownHostException {
 //        SpringApplication.run(SpringbootApiApplication.class, args);

@@ -5,10 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3c4572a-543e-4afc-b6b8-09d31ecd62ba" name="更改" comment="update">
-      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/example/springbootapi/controller/MyBatisPlusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/resources/static/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-common/src/main/java/com/example/springbootcommon/Config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-common/src/main/java/com/example/springbootcommon/PublicException/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-common/src/main/java/com/example/springbootcommon/PublicHandlerInterceptor/DataValidationInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-common/src/main/java/com/example/springbootcommon/PublicResult/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dao/src/main/java/com/example/springbootdao/Mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dao/src/main/java/com/example/springbootdao/Method/SelectAllMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dao/src/main/java/com/example/springbootdao/MySQLInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dao/src/main/java/com/example/springbootdao/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-service/src/main/java/com/example/springbootservice/Iservice/UserIService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-service/src/main/java/com/example/springbootservice/Iservice/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/example/springbootapi/SpringbootApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/example/springbootapi/SpringbootApiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/example/springbootapi/controller/controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/example/springbootapi/controller/controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/test/java/com/example/springbootapi/SpringbootApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/test/java/com/example/springbootapi/SpringbootApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-common/src/main/java/com/example/springbootcommon/Config/webMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-common/src/main/java/com/example/springbootcommon/Config/webMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-common/src/main/java/com/example/springbootcommon/PublicfIlters/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-common/src/main/java/com/example/springbootcommon/PublicfIlters/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-dao/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +38,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,7 +56,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Zero-Ql/Spring-boot.git&quot;,
-    &quot;accountId&quot;: &quot;cf712d53-2921-4913-b009-4e3bec6ab03b&quot;
+    &quot;accountId&quot;: &quot;cce75c3a-732a-4b94-b5e6-fe59b5cefa7c&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -68,6 +89,20 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;HTTP 请求.SpringbootApiApplication | #3.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.SpringbootApiApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_Injector.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_Select.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_findUsersByAgeGreaterThan.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_getMap.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_getPages.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_lists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_saveBatchUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_saveOrUpdateBatchUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_saveOrUpdateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_saveOrUpdateUser2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringbootApiApplicationTests.test_saveUser.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Spring-boot [clean].executor&quot;: &quot;Run&quot;,
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -80,7 +115,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Code/JavaCode/Spring-boot&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/MySQL/mysql-connector-j-8.3.0.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -89,8 +124,13 @@
     &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -107,19 +147,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringbootApiApplication">
-    <configuration name="SpringbootApiApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/SpringbootApiApplication.http" requestIdentifier="#1">
-      <method v="2" />
-    </configuration>
-    <configuration name="SpringbootApiApplication | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/SpringbootApiApplication.http" index="2" requestIdentifier="#2">
-      <method v="2" />
-    </configuration>
-    <configuration name="SpringbootApiApplication | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/SpringbootApiApplication.http" index="3" requestIdentifier="#3" runType="运行单个请求">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1">
-      <method v="2" />
-    </configuration>
-    <configuration name="SpringbootApiApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringbootApiApplicationTests.test_Injector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-api" />
       <extension name="coverage">
         <pattern>
@@ -129,7 +157,71 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.springbootapi" />
       <option name="MAIN_CLASS_NAME" value="com.example.springbootapi.SpringbootApiApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="METHOD_NAME" value="test_Injector" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootApiApplicationTests.test_Select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.springbootapi" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootapi.SpringbootApiApplicationTests" />
+      <option name="METHOD_NAME" value="test_Select" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootApiApplicationTests.test_findUsersByAgeGreaterThan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.springbootapi" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootapi.SpringbootApiApplicationTests" />
+      <option name="METHOD_NAME" value="test_findUsersByAgeGreaterThan" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootApiApplicationTests.test_getPages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.springbootapi" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootapi.SpringbootApiApplicationTests" />
+      <option name="METHOD_NAME" value="test_getPages" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootApiApplicationTests.test_saveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.springbootapi" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootapi.SpringbootApiApplicationTests" />
+      <option name="METHOD_NAME" value="test_saveUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,16 +236,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringbootApiApplicationTests.contextLoads" />
-        <item itemvalue="HTTP 请求.SpringbootApiApplication | #3" />
+        <item itemvalue="JUnit.SpringbootApiApplicationTests.test_Injector" />
+        <item itemvalue="JUnit.SpringbootApiApplicationTests.test_Select" />
+        <item itemvalue="JUnit.SpringbootApiApplicationTests.test_findUsersByAgeGreaterThan" />
+        <item itemvalue="JUnit.SpringbootApiApplicationTests.test_saveUser" />
+        <item itemvalue="JUnit.SpringbootApiApplicationTests.test_getPages" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
       </set>
     </attachedChunks>
   </component>
@@ -228,6 +323,60 @@
       <workItem from="1713446631881" duration="258000" />
       <workItem from="1713496842050" duration="1701000" />
       <workItem from="1713498562635" duration="4128000" />
+      <workItem from="1713517487128" duration="259000" />
+      <workItem from="1713517756036" duration="1194000" />
+      <workItem from="1713584418383" duration="4000" />
+      <workItem from="1713747606231" duration="9949000" />
+      <workItem from="1713767145290" duration="41000" />
+      <workItem from="1713767195307" duration="5607000" />
+      <workItem from="1713836977241" duration="10028000" />
+      <workItem from="1713884172375" duration="4000" />
+      <workItem from="1715054018656" duration="51000" />
+      <workItem from="1715054108936" duration="75000" />
+      <workItem from="1715054197721" duration="123000" />
+      <workItem from="1715241038045" duration="94000" />
+      <workItem from="1715241140840" duration="30000" />
+      <workItem from="1715732370675" duration="4198000" />
+      <workItem from="1715736623517" duration="350000" />
+      <workItem from="1715736987029" duration="8499000" />
+      <workItem from="1715750197448" duration="6228000" />
+      <workItem from="1715768742930" duration="5380000" />
+      <workItem from="1715925332669" duration="58000" />
+      <workItem from="1715925901891" duration="3227000" />
+      <workItem from="1715929154445" duration="5427000" />
+      <workItem from="1715948685133" duration="5506000" />
+      <workItem from="1715954608310" duration="75000" />
+      <workItem from="1715965054400" duration="1815000" />
+      <workItem from="1716000068882" duration="93000" />
+      <workItem from="1716007303956" duration="8108000" />
+      <workItem from="1716339000214" duration="271000" />
+      <workItem from="1716339280425" duration="10776000" />
+      <workItem from="1716357163661" duration="3500000" />
+      <workItem from="1716435933589" duration="8426000" />
+      <workItem from="1716533486485" duration="8254000" />
+      <workItem from="1716655525514" duration="651000" />
+      <workItem from="1716771881657" duration="11689000" />
+      <workItem from="1716943610731" duration="9708000" />
+      <workItem from="1717058263635" duration="332000" />
+      <workItem from="1717058606897" duration="17380000" />
+      <workItem from="1717134988261" duration="7508000" />
+      <workItem from="1717380920350" duration="159000" />
+      <workItem from="1717381089288" duration="2858000" />
+      <workItem from="1717548321109" duration="10022000" />
+      <workItem from="1718152873347" duration="4190000" />
+      <workItem from="1718963521229" duration="79000" />
+      <workItem from="1727100242879" duration="1185000" />
+      <workItem from="1727101438479" duration="199000" />
+      <workItem from="1727101655335" duration="129000" />
+      <workItem from="1727102928962" duration="561000" />
+      <workItem from="1730185216435" duration="146000" />
+      <workItem from="1730704615579" duration="68000" />
+      <workItem from="1730705472180" duration="145000" />
+      <workItem from="1741763812525" duration="1152000" />
+      <workItem from="1741764978157" duration="46000" />
+      <workItem from="1741765033468" duration="103000" />
+      <workItem from="1748312242453" duration="1334000" />
+      <workItem from="1748313651270" duration="13354000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -253,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713446833892</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <option name="closed" value="true" />
+      <created>1713517719330</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713517719330</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

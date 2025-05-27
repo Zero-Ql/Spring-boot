@@ -14,6 +14,8 @@ import jakarta.annotation.Resource;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -139,6 +141,8 @@ class uploadController {
 @Controller
 @RequestMapping("/user")
 class LoginController {
+    private static final Logger log = LoggerFactory.getLogger(LoginController.class);
+
     /**
      * 登录处理控制器
      *
@@ -146,7 +150,7 @@ class LoginController {
      * @param response HttpServletResponse对象，用于向客户端发送响应
      * @return 返回登录成功后重定向到的URL或登录失败后重新回到登录页面的URL
      */
-    @RequestMapping(path = "/login", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping(path = "/login", method = {RequestMethod.POST})
     public String loginController(HttpServletRequest request, HttpServletResponse response) {
         HashMap<String, String> hashMap = new HashMap<>(); // 用于存储用户输入的登录信息
         var session = request.getSession(); // 获取当前会话对象
@@ -156,24 +160,23 @@ class LoginController {
         hashMap.put("username", request.getParameter("username"));
         hashMap.put("password", request.getParameter("password"));
         // 调用Login类的login方法进行登录验证
-        if (Login.login(hashMap)) {
-            // 登录成功，创建并设置用户名和密码的Cookie
-            cookieUserName = new Cookie("username", hashMap.get("username"));
-            cookiePassword = new Cookie("password", hashMap.get("password"));
-            cookieUserName.setMaxAge(60 * 60 * 24); // 设置Cookie有效期为1天
-            cookiePassword.setMaxAge(60 * 60 * 24);
-            // 设置会话有效期为1天
-            session.setMaxInactiveInterval(60 * 60 * 24);
-            response.addCookie(cookieUserName);
-            response.addCookie(cookiePassword);
-            // 在会话中设置用户名，以便在其他页面中使用
-            session.setAttribute("username", hashMap.get("username"));
-            // 登录成功，重定向到首页
-            return "redirect:/index";
-        } else {
+        if (!Login.login(hashMap)) {
             // 登录失败，重定向回登录页面
             return "redirect:/user/login.html";
         }
+        // 登录成功，创建并设置用户名和密码的Cookie
+        cookieUserName = new Cookie("username", hashMap.get("username"));
+        cookiePassword = new Cookie("password", hashMap.get("password"));
+        cookieUserName.setMaxAge(60 * 60 * 24); // 设置Cookie有效期为1天
+        cookiePassword.setMaxAge(60 * 60 * 24);
+        // 设置会话有效期为1天
+        session.setMaxInactiveInterval(60 * 60 * 24);
+        response.addCookie(cookieUserName);
+        response.addCookie(cookiePassword);
+        // 在会话中设置用户名，以便在其他页面中使用
+        session.setAttribute("username", hashMap.get("username"));
+        // 登录成功，重定向到首页
+        return "redirect:/index";
     }
 }
 
